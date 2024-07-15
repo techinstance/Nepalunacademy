@@ -1,0 +1,56 @@
+.VacMatRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 24px;
+    height: 160px;
+    width: 400px;
+    padding: 0 16px;
+    box-shadow: 8px 8px 16px rgb(186, 186, 186) ;
+    border-radius: 8px;
+}
+.VacMatRow > p {
+  font-size: medium;
+  padding: 12px 4px;
+ 
+
+}
+#VacBtn {
+    margin: 4px 0;
+    padding: 12px 8px;
+    font-size: large;
+    color: white;
+    background-color: rgb(46, 175, 255);
+    border: none;
+    border-radius: 8px;
+}
+
+#VacBtn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.VacMatRow > img {
+    height: 160px;
+    width: 240px;
+    border-radius: 8px 8px 0 0;
+
+}
+
+.VacMaterial{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 12vh;
+    margin: 10%;
+    font-family: MainFont;
+
+}
+
+.VacMatrColumn{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+
+}

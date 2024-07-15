@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #e0f7fa;
+  }
+  
+  .login-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    max-width: 900px;
+    margin: 2%;
+
+  }
+  
+  .logo {
+    padding: 20px;
+  }
+
+  .logo > img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  
+
+  .login-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25% 0;
+  }
+  
+  .image-container .video {
+    width: 80%;
+    border-radius: 8px;
+  }
+  
+  .form-container {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .form-container h1 {
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .form-container p {
+    margin: 0 0 20px;
+    color: #666;
+  }
+  
+  .input-wrapper {
+    margin-bottom: 15px;
+  }
+  
+  .input-wrapper input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .options label {
+    display: flex;
+    align-items: center;
+    color: #666;
+  }
+  
+  .options input {
+    margin-right: 5px;
+  }
+  
+  .options a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .sign-in-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .sign-in-button:hover {
+    background: #0056b3;
+  }
+  
+  .sign-up {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .sign-up a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+  }
+  
+  .footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-media p {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .social-media .icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-media .icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .image-container .video {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,80 @@
+/* MyLearning.css */
+#learn_body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+   
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#learn_body h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#learn_body p {
+    color: #555;
+    line-height: 1.6;
+}
+
+#learn_body div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#learn_body span {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#learn_body h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#learn_body span p {
+    margin: 5px 0;
+}
+img{
+    width: 80%;
+    height:76%;
+}
+
+.section {
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-item{
+    width: 30%;
+    height: 10%;
+    border: 4px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    #learn_body div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #learn_body span {
+        flex: 1 1 45%;
+        margin: 10px;
+    }
+}

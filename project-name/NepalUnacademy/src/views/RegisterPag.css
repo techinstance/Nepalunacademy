@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #e0f7fa;
+  }
+  
+  .register-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    max-width: 900px;
+  }
+  
+  .logo {
+    padding: 20px;
+  }
+  
+  .register-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container .video {
+    width: 80%;
+    border-radius: 8px;
+  }
+  
+  .form-container {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .form-container h1 {
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .form-container p {
+    margin: 0 0 20px;
+    color: #666;
+  }
+  
+  .input-wrapper {
+    margin-bottom: 15px;
+  }
+  
+  .input-wrapper input, .input-wrapper select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .options {
+    display: flex;
+    margin-bottom: 20px;
+ 
+  }
+  
+  .options label {
+    color: #666;
+  }
+  
+  .options input {
+    margin-right: 5px;
+    width: 32px;
+ 
+  }
+  
+  .options a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .sign-up-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .sign-up-button:hover {
+    background: #0056b3;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+  }
+  
+  .footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-media p {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .social-media .icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-media .icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .inp{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
+   .password-toggle{
+    width: 32px;
+    height: 32px;
+    padding: 0 1%;
+   }
+
+  @media (max-width: 768px) {
+    .register-container {
+      flex-direction: column;
+    }
+  
+    .image-container .video {
+      width: 100%;
+    }
+  }
+  

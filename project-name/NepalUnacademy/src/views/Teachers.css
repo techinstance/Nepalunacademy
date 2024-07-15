@@ -1,0 +1,75 @@
+/* Teachers.css */
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .team-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .team-section .highlight {
+    font-weight: bold;
+    color: #ff9800; /* Highlight color */
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tab.active {
+    background-color: #ff9800; /* Active tab background color */
+    color: #fff; /* Active tab text color */
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff; /* Member card background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 200px; /* Adjust card width as needed */
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+  }
+  
+  .team-member h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .team-member p {
+    font-size: 14px;
+    color: #777; /* Subtitle color */
+  }
+  
