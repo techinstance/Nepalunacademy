@@ -32,7 +32,7 @@ const Home = () => {
   </span>
   Our <span style={{ color: '#e74c3c' }}>Services</span>
 </h1>
-<h1>.................Azay..................... </h1>
+
 
 </div>
 
