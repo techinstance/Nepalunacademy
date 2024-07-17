@@ -61,7 +61,7 @@ const FreeSessionSection = () => {
       <div className="content">
         <div className="visual">
         <img
-  src="/src/assets/girl.png"
+  src="/assets/girl.png"
   alt="Girl Image"
   style={{
     display: 'block',
@@ -79,7 +79,7 @@ const FreeSessionSection = () => {
     
         </div>
         <div className="form-container">
-          <h2>Book your Free Session <span role="img" aria-label="boy">👦<img src="/src/assets/Category/nepalflag.gif" style={{ height: '24px', width: '24px', verticalAlign: 'middle' }} alt="Nepal Flag" /></span></h2>
+          <h2>Book your Free Session <span role="img" aria-label="boy">👦<img src="/assets/Category/nepalflag.gif" style={{ height: '24px', width: '24px', verticalAlign: 'middle' }} alt="Nepal Flag" /></span></h2>
           <p>Learn from Nepal's best teachers <span role="img" aria-label="like">👍</span></p>
           <div className="session-mode-toggle">
             <button

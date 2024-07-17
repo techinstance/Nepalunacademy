@@ -1,9 +1,9 @@
 import React from 'react';
 import './RegisterPag.css';
-import facebookIcon from '/src/assets/images/icon/facebook.png';
-import instagramIcon from '/src/assets/images/icon/insta.png';
-import twitterIcon from '/src/assets/images/icon/linkedin.png';
-import linkedinIcon from '/src/assets/images/icon/linkedin.png';
+import facebookIcon from '/assets/images/icon/facebook.png';
+import instagramIcon from '/assets/images/icon/insta.png';
+import twitterIcon from '/assets/images/icon/linkedin.png';
+import linkedinIcon from '/assets/images/icon/linkedin.png';
 import { useState, useRef } from 'react';
 import axiosClient from "../axios-client.js";
 import { useStateContext } from "../Context/ContextProvider.jsx";
@@ -53,12 +53,12 @@ const RegisterPag = () => {
     <div className="register-page">
       <div className="register-container">
         <div className="logo">
-          <img src="/src/assets/images/icon/Logo.png" alt="logo" />
-          <img src="/src/assets/Category/nepalflag.gif" style={{ height: '62px', width: '54px', verticalAlign: 'normal' }} alt="Nepal Flag" />
+          <img src="/assets/images/icon/Logo.png" alt="logo" />
+          <img src="/assets/Category/nepalflag.gif" style={{ height: '62px', width: '54px', verticalAlign: 'normal' }} alt="Nepal Flag" />
         </div>
         <div className="register-content">
           <div className="image-container">
-            <video src="./src/assets/elearning-banner.mp4" controls autoPlay loop muted className="video"></video>
+            <video src="./assets/elearning-banner.mp4" controls autoPlay loop muted className="video"></video>
           </div>
           <div className="form-container">
             <h1>Create an Account</h1>

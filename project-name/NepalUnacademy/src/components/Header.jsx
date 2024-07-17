@@ -34,7 +34,7 @@ const Header = () => {
         <nav>
           <div className="logo">
             <Link to="/">
-              <img src="/src/assets/images/icon/Logo.png" alt="logo" /><img src="/src/assets/Category/nepalflag.gif" style={{ height: '62px', width: '54px', verticalAlign: 'normal' }} alt="Nepal Flag" />
+              <img src="assets/images/icon/Logo.png" alt="logo" /><img src="assets/Category/nepalflag.gif" style={{ height: '62px', width: '54px', verticalAlign: 'normal' }} alt="Nepal Flag" />
             </Link>
           </div>
           <div className='space'>
@@ -50,7 +50,7 @@ const Header = () => {
           </ul>
           <div className="srch">
             <input type="text" className="search" placeholder="Search here..." />
-            <img src="/src/assets/images/icon/search.png" alt="search" onClick={slide} />
+            <img src="assets/images/icon/search.png" alt="search" onClick={slide} />
           </div>
           {token ? (
             <span>
@@ -59,12 +59,12 @@ const Header = () => {
           ) : (
             <Link className="get-started" to="/login">Get Started</Link>
           )}
-          <img src="/src/assets/images/icon/menu.png" className="menu" onClick={() => {sideMenu(0); console.log("This was Hit") }} alt="menu" />
+          <img src="assets/images/icon/menu.png" className="menu" onClick={() => {sideMenu(0); console.log("This was Hit") }} alt="menu" />
         </nav>
 
         <div className="side-menu" id="side-menu">
           <div className="close" onClick={() => sideMenu(1)}>
-            <img src="/src/assets/images/icon/close.png" alt="close" />
+            <img src="assets/images/icon/close.png" alt="close" />
           </div>
           <ul>
             <li><Link to="#about_section">About</Link></li>
