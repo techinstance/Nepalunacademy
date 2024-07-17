@@ -1,0 +1,260 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.free-session-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #6a1b9a; /* Purple background */
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.visual {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.visual img {
+  position: absolute;
+  max-width: 150px;
+}
+
+.visual1 { top: 10%; left: 20%; }
+.visual2 { top: 30%; right: 20%; }
+.visual3 { bottom: 10%; left: 20%; }
+.visual4 { bottom: 30%; right: 20%; }
+
+.form-container {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.session-mode-toggle {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.session-mode-toggle button {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  background: #ddd;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.session-mode-toggle button.active {
+  background: #6a1b9a;
+  color: #fff;
+}
+
+.session-mode-toggle button:not(:last-child) {
+  margin-right: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form select, form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.mobile-input {
+  display: flex;
+}
+
+.mobile-input input {
+  flex: 1;
+}
+
+.mobile-input button {
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  background: #6a1b9a;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  padding: 10px;
+  background: #ff6f00; /* Orange button */
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #e65c00;
+}
+
+.schedule-btn {
+  padding: 8px; /* Smaller button */
+  background: #007bff; /* Blue button */
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  margin-bottom: 15px;
+}
+
+.schedule-btn:hover {
+  background: #0056b3;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.modal h2 {
+  color: #6a1b9a;
+  margin-bottom: 10px;
+}
+
+.modal p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.modal pre {
+  text-align: left;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.send-email-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.send-email-btn:hover {
+  background: #54158a;
+}
+
+.send-whatsapp-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #25d366; /* WhatsApp green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.send-whatsapp-btn:hover {
+  background: #1da851;
+}
+
+.close-btn {
+  padding: 10px 20px;
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 0 auto; /* Center the close button */
+  display: block; /* Center the close button */
+}
+
+.close-btn:hover {
+  background: #54158a;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .visual {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+}
