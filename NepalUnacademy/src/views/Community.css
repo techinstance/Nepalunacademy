@@ -1,0 +1,80 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.community-section {
+  text-align: center;
+  background-color: #00a3cc;
+  color: white;
+  padding: 50px 0;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.header p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  font-size: 30px;
+  color: white;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-media a:hover {
+  transform: scale(1.1);
+}
+
+.social-media a.facebook:hover {
+  color: #3b5998;
+}
+
+.social-media a.twitter:hover {
+  color: #1da1f2;
+}
+
+.social-media a.instagram:hover {
+  color: #e1306c;
+}
+
+.social-media a.whatsapp:hover {
+  color: #25d366;
+}
+
+.social-media a.telegram:hover {
+  color: #0088cc;
+}
+
+.register-button {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.register-button:hover {
+  background-color: #e6b800;
+}
