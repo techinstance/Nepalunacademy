@@ -1,54 +1,83 @@
-.stdMatRow{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 24px;
-    height: 280px;
-    width: 240px;
-    box-shadow: 8px 8px 16px rgb(186, 186, 186) ;
-    border-radius: 8px;
-}
-.stdMatRow > p {
-  font-size: larger;
-  padding: 12px 0;
 
-
-}
-#StdBtn {
-    margin: 4px 0;
-    padding: 12px 8px;
-    font-size: large;
-    color: white;
-    background-color: rgb(46, 175, 255);
-    border: none;
-    border-radius: 8px;
-}
-
-#StdBtn:hover{
-    opacity: 0.9;
-    cursor: pointer;
-}
-
-.stdMatRow > img {
-    height: 160px;
-    width: 240px;
-    border-radius: 8px 8px 0 0;
-
-}
-
-.StdMaterial{
+.StdMaterial {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 12vh;
-    margin: 10%;
-    font-family: MainFont;
-
+    margin: 5%; 
+    font-family: 'Arial', sans-serif; 
 }
 
-.StdMatrColumn{
+
+.stdMatRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px; 
+    height: 320px;
+    width: 260px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    background-color: #fff; 
+    transition: transform 0.3s ease; 
+}
+
+.stdMatRow:hover {
+    transform: scale(1.05); 
+}
+
+
+.stdMatRow > p {
+    font-size: 1.1em; 
+    padding: 16px 12px; 
+    text-align: center; 
+    color: #333;
+}
+
+
+#StdBtn {
+    margin: 8px 0;
+    padding: 14px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #2eafff; 
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, opacity 0.3s ease; 
+}
+
+#StdBtn:hover {
+    background-color: #1c8ed6; 
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+.stdMatRow > img {
+    height: 180px; 
+    width: 260px; 
+    border-radius: 10px 10px 0 0; 
+    object-fit: cover; 
+    transition: opacity 0.3s ease; 
+}
+
+.stdMatRow > img:hover {
+    opacity: 0.8; 
+}
+
+
+.StdMatrColumn {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 16px; 
+}
+
+
+.StdMaterial > h1 {
+    font-size: 2.5em; 
+    color: #2eafff; 
+    margin-bottom: 20px;
+    text-transform: uppercase; 
 }
