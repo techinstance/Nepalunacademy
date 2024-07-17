@@ -1,15 +1,15 @@
 import React from 'react';
 import './Courses.css';
-import courseBg from '/src/assets/Category/course-bg.png';
-import course1 from '/src/assets/Category/course-1.png';
-import course2 from '/src/assets/Category/course-2.png';
-import course3 from '/src/assets/Category/course-3.png';
-import course4 from '/src/assets/Category/course-4.png';
-import course5 from '/src/assets/Category/course-5.png';
-import course6 from '/src/assets/Category/course-6.png';
-import starFill from '/src/assets/Category/star-fill.svg';
-import fileOutline from '/src/assets/Category/file-outline.svg';
-import userOutline from '/src/assets/Category/user-outline.svg';
+import courseBg from '/assets/Category/course-bg.png';
+import course1 from '/assets/Category/course-1.png';
+import course2 from '/assets/Category/course-2.png';
+import course3 from '/assets/Category/course-3.png';
+import course4 from '/assets/Category/course-4.png';
+import course5 from '/assets/Category/course-5.png';
+import course6 from '/assets/Category/course-6.png';
+import starFill from '/assets/Category/star-fill.svg';
+import fileOutline from '/assets/Category/file-outline.svg';
+import userOutline from '/assets/Category/user-outline.svg';
 
 const Courses = () => (
   <section className="section course has-bg-image" aria-labelledby="course-label" style={{ backgroundImage: `url(${courseBg})` }}>

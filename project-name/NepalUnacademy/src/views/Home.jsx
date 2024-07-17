@@ -39,49 +39,49 @@ const Home = () => {
 <div className="service-swipe">
   <a href="subjects/computer_courses.html" className="s-link">
     <div className="s-card">
-      <img src="/src/assets/images/icon/computer-courses.png" alt="Computer Courses" />
+      <img src="/assets/images/icon/computer-courses.png" alt="Computer Courses" />
       <p>Free Online Computer Courses</p>
     </div>
   </a>
   <a href="subjects/jee.html" className="s-link">
     <div className="s-card">
-      <img src="/src/assets/images/icon/brainbooster.png" alt="Building Concepts for Competitive Exams" />
+      <img src="/assets/images/icon/brainbooster.png" alt="Building Concepts for Competitive Exams" />
       <p>Building Concepts for Competitive Exams</p>
     </div>
   </a>
   <a href="#" className="s-link">
     <div className="s-card">
-      <img src="/src/assets/images/icon/online-tutorials.png" alt="Online Video Lectures" />
+      <img src="/assets/images/icon/online-tutorials.png" alt="Online Video Lectures" />
       <p>Online Video Lectures</p>
     </div>
   </a>
   <a href="subjects/jee.html#sample_papers" className="s-link">
     <div className="s-card">
-      <img src="/src/assets/images/icon/papers.jpg" alt="Sample Papers" />
+      <img src="/assets/images/icon/papers.jpg" alt="Sample Papers" />
       <p>Sample Papers of Various Competitive Exams</p>
     </div>
   </a>
   <a href="#" className="s-link">
     <div className="s-card">
-      <img src="/src/assets/images/icon/p3.png" alt="Performance and Ranking Report" />
+      <img src="/assets/images/icon/p3.png" alt="Performance and Ranking Report" />
       <p>Performance and Ranking Report</p>
     </div>
   </a>
   <a href="#contactus_section" className="s-link">
     <div className="s-card">
-      <img src="/src/assets/images/icon/discussion.png" alt="Discussion with Our Tutors & Mentors" />
+      <img src="/assets/images/icon/discussion.png" alt="Discussion with Our Tutors & Mentors" />
       <p>Discussion with Our Tutors & Mentors</p>
     </div>
   </a>
   <a href="subjects/quiz.html" className="s-link">
     <div className="s-card">
-      <img src="/src/assets/images/icon/q1.png" alt="Daily Brain Teasing Questions to Improve IQ" />
+      <img src="/assets/images/icon/q1.png" alt="Daily Brain Teasing Questions to Improve IQ" />
       <p>Daily Brain Teasing Questions to Improve IQ</p>
     </div>
   </a>
   <a href="#contactus_section" className="s-link">
     <div className="s-card">
-      <img src="/src/assets/images/icon/help.png" alt="24x7 Online Support" />
+      <img src="/assets/images/icon/help.png" alt="24x7 Online Support" />
       <p>24x7 Online Support</p>
     </div>
   </a>
@@ -93,6 +93,7 @@ const Home = () => {
     
       <Teachers></Teachers>
       <Community></Community>
+      
 {/* Contacts  */}
 
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import './LoginPage.css';
-import facebookIcon from '/src/assets/images/icon/facebook.png'; // Make sure you have these icons in your assets folder
-import instagramIcon from '/src/assets/images/icon/insta.png';
-import twitterIcon from '/src/assets/images/icon/linkedin.png';
-import linkedinIcon from '/src/assets/images/icon/linkedin.png';
+import facebookIcon from '/assets/images/icon/facebook.png'; // Make sure you have these icons in your assets folder
+import instagramIcon from '/assets/images/icon/insta.png';
+import twitterIcon from '/assets/images/icon/linkedin.png';
+import linkedinIcon from '/assets/images/icon/linkedin.png';
 import { Link } from 'react-router-dom';
 import { useState, useRef } from 'react';
 import { useStateContext } from '../Context/ContextProvider';
@@ -54,10 +54,10 @@ const LoginPage = () => {
       <div className="login-container">
         <div className="logo">
  
-      <img src="/src/assets/images/icon/Logo.png" alt="logo" />
-      <img src="/src/assets/Category/nepalflag.gif" style={{ height: '62px', width: '54px', verticalAlign: 'normal' }} alt="Nepal Flag" />
+      <img src="/assets/images/icon/Logo.png" alt="logo" />
+      <img src="/assets/Category/nepalflag.gif" style={{ height: '62px', width: '54px', verticalAlign: 'normal' }} alt="Nepal Flag" />
       <div className="image-container">
-            <video src="./src/assets/elearning-banner.mp4" controls autoPlay loop muted className="video"></video>
+            <video src="./assets/elearning-banner.mp4" controls autoPlay loop muted className="video"></video>
           </div>
         </div>
         <div className="login-content">

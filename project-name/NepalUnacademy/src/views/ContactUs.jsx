@@ -12,19 +12,19 @@ const ContactUs = () => {
               <ul>
                 <li>
                   <span>
-                    <img src="project-name\NepalUnacademy\src\assets\social png\location.png" alt="Location" />
+                    <img src="project-name\NepalUnacademy\public\assets\social png\location.png" alt="Location" />
                   </span>
                   <span style={{ fontSize: '14px' }}>janakpur, Nepal</span>
                 </li>
                 <li>
                   <span>
-                    <img src="project-name\NepalUnacademy\src\assets\social png\gmail.png" alt="Email" />
+                    <img src="project-name\NepalUnacademy\public\assets\social png\gmail.png" alt="Email" />
                   </span>
                   <span style={{ fontSize: '14px' }}>technologyinstance@gmail.com</span>
                 </li>
                 <li>
                   <span>
-                    <img src="project-name\NepalUnacademy\src\assets\social png\phone_icon.png" alt="Phone" />
+                    <img src="project-name\NepalUnacademy\public\assets\social png\phone_icon.png" alt="Phone" />
                   </span>
                   <span style={{ fontSize: '14px' }}>+91 6203370346</span>
                 </li>
@@ -34,27 +34,27 @@ const ContactUs = () => {
               <ul>
                 <li>
                   <a href="https://www.facebook.com/solutionworld24x7/">
-                    <img src="project-name\NepalUnacademy\src\assets\social png\facebook.png" alt="Facebook" />
+                    <img src="project-name\NepalUnacademy\public\assets\social png\facebook.png" alt="Facebook" />
                   </a>
                 </li>
                 <li>
                   <a href="https://twitter.com/Solution__World">
-                    <img src="project-name\NepalUnacademy\src\assets\social png\twitter.png" alt="Twitter" />
+                    <img src="project-name\NepalUnacademy\public\assets\social png\twitter.png" alt="Twitter" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/nepal_unacademy?igsh=eTV2OXNvMzVocmtx">
-                    <img src="project-name\NepalUnacademy\src\assets\social png\instagram.png" alt="Instagram" />
+                    <img src="project-name\NepalUnacademy\public\assets\social png\instagram.png" alt="Instagram" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com/in/tech-instance/">
-                    <img src="project-name\NepalUnacademy\src\assets\social png\linkedin_.png" alt="LinkedIn" />
+                    <img src="project-name\NepalUnacademy\public\assets\social png\linkedin_.png" alt="LinkedIn" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.youtube.com/@SolutionWorld24x7">
-                    <img src="project-name\NepalUnacademy\src\assets\social png\youtube.png" alt="YouTube" />
+                    <img src="project-name\NepalUnacademy\public\assets\social png\youtube.png" alt="YouTube" />
                   </a>
                 </li>
               </ul>

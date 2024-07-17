@@ -3,17 +3,17 @@ import './AdvantagesSection.css';
 
 const advantages = [
   {
-    imgSrc: "./src/assets/AboutCard/NepalUnAcademy3.jpeg",
+    imgSrc: "./assets/AboutCard/NepalUnAcademy3.jpeg",
     altText: "Conceptual Clarity",
     description: "Conceptual clarity through visualisation",
   },
   {
-    imgSrc: "./src/assets/AboutCard/NepalUnAcademy2.jpeg",
+    imgSrc: "./assets/AboutCard/NepalUnAcademy2.jpeg",
     altText: "Personalized Learning",
     description: "Personalised learning programs",
   },
   {
-    imgSrc: "./src/assets/AboutCard/NepalUnAcademy1.jpeg",
+    imgSrc: "./assets/AboutCard/NepalUnAcademy1.jpeg",
     altText: "Individual Attention",
     description: "Unmatched individual attention",
   },
