@@ -53,32 +53,40 @@ const Teachers = () => {
       </div>
       <div className="team-members">
         <div className="team-member">
-          <img src="https://via.placeholder.com/150" alt="Rupesh Yadav" />
+          <img src="./assets/Teachers/Rupesh.png" alt="Rupesh Yadav" />
           <h3>Rupesh Yadav</h3>
-          <p>Bachelor in mathematics</p>
-          <p>Mathematic Teacher</p>
+          <h5>Bachelor in mathematics</h5>
+          <h4>Mathematic</h4>
         </div>
         <div className="team-member">
-          <img src="https://via.placeholder.com/150" alt="Ajay Kumar Yadav" />
+          <img src="/assets/Teachers/Saurav.jpg" alt="Saurabh dhakal" />
           <h3>Saurabh dhakal</h3>
-          <p>Bachelors in civil engineering</p>
-          <p>Mathematics</p>
+          <h5>Bachelors in civil engineering</h5>
+          <h4>Mathematics</h4>
         </div>
         <div className="team-member">
-          <img src="https://via.placeholder.com/150" alt="Kaley Deneen" />
-          <h3>KALEY DENEEN</h3>
-          <p>DIRECTOR OF STRATEGY & SERVICE, EMEA</p>
+          <img src="/assets/Teachers/Aavash.jpg" alt="Aavash Adhikari" />
+          <h3>Aavash Adhikari</h3>
+          <h5>Bachelors in civil engineering </h5>
+          <h4>Chemistry</h4>
         </div>
         <div className="team-member">
-          <img src="https://via.placeholder.com/150" alt="Phil Dupertuis" />
+          <img src="/assets/Teachers/Ajay.jpg" alt="Ajay Kumar Yadav" />
           <h3>Ajay Kumar Yadav</h3>
-          <p>Bachelor in Computer Science</p>
-          <p>MERN Stack Developer</p>
+          <h5>Bachelor in Computer Science</h5>
+          <h4>English</h4>
         </div>
         <div className="team-member">
-          <img src="https://via.placeholder.com/150" alt="Tony Eades" />
-          <h3>TONY EADES</h3>
-          <p>CHIEF EVANGELIST</p>
+          <img src="/assets/Teachers/Priya.jpg" alt="Priya Ranjan" />
+          <h3>Priya Ranjan</h3>
+          <h5>Bachelor in Computer Science</h5>
+          <h4>Computer Science</h4>
+        </div>
+        <div className="team-member">
+          <img src="/assets/Teachers/Rana.jpg" alt="Rana Sujeet Kumar" />
+          <h3>Rana Sujeet Kumar</h3>
+          <h5>Bachelor in Computer Science Information & Technology</h5>
+          <h4>Physics</h4>
         </div>
       </div>
        
