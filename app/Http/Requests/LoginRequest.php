@@ -13,7 +13,12 @@ class LoginRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        try{
+
+            return true;
+        }catch(Exception $e){
+             return $e->getMessage();
+        }
     }
 
     /**

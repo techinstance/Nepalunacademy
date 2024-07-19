@@ -11,7 +11,14 @@ class StudyMaterialController extends Controller
         // get all the live session
 
     function list(){
-        return StudyMaterial::all();
+        try{
+            return StudyMaterial::all();
+        }catch(\Exception $e){
+            return response()->json([
+                'message' => 'Erro in Finding Material',
+                'error' => $e->getMessage()
+            ], 500);
+        }
     }
 
     //get specific user based livesession
