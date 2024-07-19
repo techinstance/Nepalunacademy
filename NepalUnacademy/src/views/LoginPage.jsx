@@ -34,6 +34,7 @@ const LoginPage = () => {
         if (response && response.status === 422) {
           setMessage(response.data.message);
         }
+        console.log(error);
       });
   };
 
@@ -66,6 +67,7 @@ const LoginPage = () => {
             <h1>Welcome Back!</h1>
             <p>Login to continue</p>
             <form onSubmit={handleSubmit}>
+               <span>{message}</span>
               <div className="input-wrapper">
                 <input type="email" placeholder="your mail@gmail.com" ref={emailRef} required/>
               </div>
