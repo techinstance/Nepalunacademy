@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import { useStateContext } from "../Context/ContextProvider";
-
 import axiosClient from "../axios-client";
-import "./css/StudyMaterial.css"
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
+import "./css/StudyMaterial.css";
 
 function StudyMaterial() {
     const [data, setData] = useState([]);
     const [errors, setErrors] = useState(null); // Initialize errors state
-    const {user} = useStateContext();
+    const { user } = useStateContext();
+    const navigate = useNavigate(); // Initialize navigate function
 
     useEffect(() => {
-       
         axiosClient.get('/StudyMaterial')
             .then(({ data }) => {
                 setData(data);
@@ -25,14 +25,13 @@ function StudyMaterial() {
             });
     }, []); // Empty dependency array to run only once
 
-    const handleClk = (stmid) =>{
-        axiosClient.post('/User_material',{
-            User_id:user['id'],
-            Study_material_id:stmid
+    const handleSubscribe = (stmid) => {
+        axiosClient.post('/User_material', {
+            User_id: user['id'],
+            Study_material_id: stmid
         })
-            .then(({ data }) => {
-                // setData(data);
-                // console.log(data);
+            .then(() => {
+                navigate('/storage'); // Redirect to storage section on success
             })
             .catch(err => {
                 const response = err.response;
@@ -41,32 +40,32 @@ function StudyMaterial() {
                     setErrors(response.data.errors);
                 }
             });
-    }
+    };
 
     return (
-        <div className="StdMaterial">
-            <h1>StudyMaterials</h1>
-           
-            <div className="StdMatrColumn">
-            {data.length > 0 ? (
-                data.map((item) => (
-                    <span key={item.id} className="stdMatRow">
-                        <img src={item.img_path} alt="Photo of Books"></img>
-                        <p>{item.Desc}</p>
-                        {/* <p>{item.File}</p> */}
-                        <button id="StdBtn" onClick={()=>{handleClk(item.id)}}>Subscribe</button>
-                    </span>
-                ))
-            ) : (
-                <p>No study materials available</p>
-            )}
-            {errors && (
-                <div>
-                    <h2>Errors</h2>
-                    <pre>{JSON.stringify(errors, null, 2)}</pre>
-                    
-                </div>
-            )}
+        <div className="study-material-container">
+            <h1>Study Materials 📚</h1>
+
+            <div className="study-material-grid">
+                {data.length > 0 ? (
+                    data.map((item) => (
+                        <div key={item.id} className="study-material-card">
+                            <img src={item.img_path} alt="Study Material" />
+                            <div className="study-material-content">
+                                <p>{item.Desc}</p>
+                                <button className="subscribe-btn" onClick={() => handleSubscribe(item.id)}>Subscribe</button>
+                            </div>
+                        </div>
+                    ))
+                ) : (
+                    <p>No study materials available</p>
+                )}
+                {errors && (
+                    <div className="error-messages">
+                        <h2>Errors</h2>
+                        <pre>{JSON.stringify(errors, null, 2)}</pre>
+                    </div>
+                )}
             </div>
         </div>
     );
