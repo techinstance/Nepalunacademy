@@ -1,83 +1,95 @@
-
-.StdMaterial {
+.study-material-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 12vh;
-    margin: 5%; 
-    font-family: 'Arial', sans-serif; 
+    margin: 5% auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
 }
 
-
-.stdMatRow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 16px; 
-    height: 320px;
-    width: 260px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
-    border-radius: 10px;
-    background-color: #fff; 
-    transition: transform 0.3s ease; 
-}
-
-.stdMatRow:hover {
-    transform: scale(1.05); 
-}
-
-
-.stdMatRow > p {
-    font-size: 1.1em; 
-    padding: 16px 12px; 
-    text-align: center; 
-    color: #333;
-}
-
-
-#StdBtn {
-    margin: 8px 0;
-    padding: 14px 20px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #2eafff; 
-    border: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, opacity 0.3s ease; 
-}
-
-#StdBtn:hover {
-    background-color: #1c8ed6; 
-    opacity: 0.9;
-    cursor: pointer;
-}
-
-
-.stdMatRow > img {
-    height: 180px; 
-    width: 260px; 
-    border-radius: 10px 10px 0 0; 
-    object-fit: cover; 
-    transition: opacity 0.3s ease; 
-}
-
-.stdMatRow > img:hover {
-    opacity: 0.8; 
-}
-
-
-.StdMatrColumn {
+.study-material-grid {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    gap: 24px;
     justify-content: center;
-    gap: 16px; 
 }
 
+.study-material-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-.StdMaterial > h1 {
-    font-size: 2.5em; 
-    color: #2eafff; 
+.study-material-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.study-material-card > img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.study-material-card > img:hover {
+    opacity: 0.85;
+}
+
+.study-material-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.study-material-content > p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+.subscribe-btn {
+    margin-top: 12px;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #2eafff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.subscribe-btn::before {
+    content: "📥 ";
+    font-size: 1.3em;
+}
+
+.subscribe-btn:hover {
+    background-color: #1c8ed6;
+    transform: translateY(-2px);
+}
+
+.error-messages {
+    margin-top: 20px;
+    color: red;
+    text-align: center;
+}
+
+.study-material-container > h1 {
+    font-size: 2.8em;
+    color: #2eafff;
     margin-bottom: 20px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
 }
