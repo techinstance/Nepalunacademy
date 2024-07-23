@@ -44,7 +44,7 @@ function StudyMaterial() {
 
     return (
         <div className="study-material-container">
-            <h1>Study Materials 📚</h1>
+            <h1 className="headin">Study Materials 📚</h1>
 
             <div className="study-material-grid">
                 {data.length > 0 ? (
