@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import axiosClient from "../axios-client";
-import "./css/Educator.css"
+import "./css/Educator.css";
 
 function Educator() {
     const [data, setData] = useState([]);
-    const [errors, setErrors] = useState(null); // Initialize errors state
+    const [errors, setErrors] = useState(null);
 
     useEffect(() => {
         axiosClient.get('/Educators')
@@ -18,37 +18,39 @@ function Educator() {
                     setErrors(response.data.errors);
                 }
             });
-    }, []); // Empty dependency array to run only once
+    }, []);
 
     return (
-        <div className="EdMaterial">
-            <h1>Educators</h1>
-            <div className="EdMatrColumn">
-
-            {data.length > 0 ? (
-                data.map((item) => (
-                    <span key={item.id} className="EdMatRow">
-                        <img src={item.img_path} alt="Profile Image" />
-                        <p>
-                        Hi, I {item.name} is Educator at NepalUnacademy
-                        .I take {item.Subject} Mostly.
-                        I hve Completed my {item.Course}.About myself
-                        {item.About}
-                        </p>
-                        <button id="StdBtn">Follow</button>
-                    </span>
-                ))
-            ) : (
-                <p>Loading.....</p>
-            )}
-            {errors && (
-                <div>
-                    <h2>Errors</h2>
-                    <pre>{JSON.stringify(errors, null, 2)}</pre>
-                </div>
-            )}
+        <div className="educator-section">
+            <h1>Our Amazing Educator Team</h1>
+            <div className="educators-container">
+                {data.length > 0 ? (
+                    data.map((item) => (
+                        <div key={item.id} className="educator-card">
+                            <img src={item.img_path} alt="Profile" />
+                            <div className="educator-info">
+                                <h2>{item.name}</h2>
+                                <h3>{item.Subject}</h3>
+                                <p>{item.Course}</p>
+                                <div className="rating">
+                                    <span>⭐</span>
+                                    <span>⭐</span>
+                                    <span>⭐</span>
+                                </div>
+                                <button className="follow-btn">Follow</button>
+                            </div>
                         </div>
-
+                    ))
+                ) : (
+                    <p>Loading.....</p>
+                )}
+                {errors && (
+                    <div className="errors">
+                        <h2>Errors</h2>
+                        <pre>{JSON.stringify(errors, null, 2)}</pre>
+                    </div>
+                )}
+            </div>
         </div>
     );
 }

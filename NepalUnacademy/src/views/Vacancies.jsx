@@ -33,7 +33,10 @@ function Vacancies() {
                             <div key={item.id} className="VacMatRow">
                                 <div className="icon">🎓</div>
                                 <p className="title">{item.Title} <span className="new">New</span></p>
-                                <p className="description">{item.Desc}</p>
+                                <p className="description">
+                                    <span className="date">Date: {item.Date}</span><br />
+                                    <span className="details">{item.Desc}</span>
+                                </p>
                                 <button className="VacBtn">
                                     <a href={item.Link} target="_blank" rel="noopener noreferrer">Apply</a>
                                 </button>
