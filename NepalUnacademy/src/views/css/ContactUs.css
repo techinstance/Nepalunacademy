@@ -1,217 +1,302 @@
-.main-box{
-    background: linear-gradient( to left, #095a55 0%, #095a55 50%, #fff38e 50%, #fff38e 100% );
-    height: 93vh;
+/* Importing fonts from Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting font family for the body */
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: #061e32;
+}
+
+/* Container for the main content */
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* Styling for main heading */
+.container h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+/* Styling for paragraph text */
+.container p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+/* Styling for contact box container */
+.contact-box {
+    background: #ffffff;
     display: flex;
-    justify-content: center;
-   align-items: center;}
-  .contact-form{
-    position: relative;
-    width: 1100px;
-    height: 550px;
-  }
-  .contact-form .contact-info{
-     position: absolute;
-     width: 350px;
-     top:40px;
-     height: calc(100% - 120px);
-     background-color:#095a55;
-     padding: 30px;
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-     justify-content: space-between;
-     z-index: 9998;
-     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  .contact-info h2{
-    color: #fff;
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .contact-info ul{
-    position: relative;
-    margin: 20px 0px;
-    padding-left: 0px;
-  }
-  .contact-info ul li{
-     position: relative;
-     list-style: none;
-     display: flex;
-     align-items: flex-start;
-     margin: 20px 0;
-     cursor: pointer;
-     align-items: flex-start;
-  }
-  .contact-info ul li span:nth-child(1){
-     width:30px;
-     min-width: 30px;
-  } 
-  .contact-info ul li span:nth-child(1) img{
-     max-width: 100%;
-     filter: invert(1);
-  } 
-  .contact-info ul li span:nth-child(2){
-     color: #fff;
-     margin-left: 10px;
-     font-weight: 300;
-  } 
-  .contact-info .social-icons ul{
-    position: relative;
-    display: flex;
-  }
-  .contact-info .social-icons ul li{
-    list-style: none;
-    margin-right: 15px;
-  }
-  .contact-info .social-icons ul li a{
-    text-decoration: none;
-  }
-  .contact-info .social-icons ul li a img{
-    filter: invert(1);
-    width: 20px;
-  }
-  .contact-form .info-form{
-      position: absolute;
-      background-color: #fff;
-       box-sizing: border-box; /* Add this line */
-      padding: 50px 20px;
-      width: calc(100% - 150px);  
-      padding-left: 250px;
-      margin-left: 150px;
-      margin-top: 5px;
-  }
-  .info-form h2{
-    color: #0f3959;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 15px;
-  }
-  .info-form .inner-form{
-    position: relative;
+    border-radius: 20px;
+}
+
+/* Styling for left container inside the contact box */
+.container-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+/* Styling for right container inside the contact box */
+.container-right {
+    flex-basis: 40%;
+    padding: 40px 60px;
+    background: hsl(207, 95%, 55%);
+    color: #ffffff;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* Styling for heading inside left container */
+.container-left h3 {
+    font-size: 25px;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+/* Styling for heading inside right container */
+.container-right h3 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Styling for input rows */
+.input-row {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 30px;
-  }
-  .info-form .inner-form .input-box{
-    position: relative;
-    margin-bottom: 30px;
-  }
-  .info-form .inner-form .content-width{
-    width: 47%;
-  }
-  .info-form .inner-form .content-full-width{
-    width: 100%;
-  }
-  .info-form .inner-form .input-box input, .info-form .inner-form .input-box textarea{
-    width: 100%;
-    resize: none;
-    font-size: 18px;
-    font-weight: 300;
-    padding: 0px 0;
-    color: #333;
-    border:none;
-    outline:none;
-    border-bottom: 1px solid #777;
-  }
-  .info-form .inner-form .input-box textarea{
-    height: 60px;
-  }
-  .info-form .inner-form .input-box span{
-    position: absolute;
-    left:0;
-    padding: 0px 0;
-    font-size: 18px;
-    font-weight: 300;
-    transition: 0.3s;
-  }
-  .info-form .inner-form .input-box input:focus ~ span,
-  .info-form .inner-form .input-box input:valid ~ span, 
-  .info-form .inner-form .input-box textarea:focus ~ span,
-  .info-form .inner-form .input-box textarea:valid ~ span{
-      transform: translateY(-20px);
-      font-size: 12px;
-      font-weight: 400;
-      letter-spacing: 1px;
-  }
-  .info-form .inner-form .input-box input[type="submit"]{
-    position: relative;
-    cursor: pointer;
-    background-color: #095a55;
-    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Styling for input groups inside input rows */
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+/* Styling for input fields */
+input {
+    width: 95%;
     border: none;
-    max-width: 150px;
-    padding:12px;
-  }
-  /* /Responsive section/ */
-  @media screen and (max-width: 1440px) {
-    .contact-form {
-      margin: 0 auto;
+    color: #353535;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+} 
+
+/* Styling for textareas */
+textarea {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Styling for labels */
+label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color: #353535;
+}
+
+/* Styling for buttons */
+button {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    background: #000000;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 20%;
+    height: 40px;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0px 5px 10px 0px #0000003a;
+}
+
+/* Hover styling for buttons */
+button:hover {
+    color: #fff;
+    background: hsl(207, 97%, 35%);
+    box-shadow: 0px 5px 10px 0px hsla(207, 97%, 35%, 0.431);
+}
+
+/* Styling for table cells */
+tr td:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+tr td {
+    padding-top: 20px;
+}
+
+/* Styling for iframes */
+iframe {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 30px;
+}
+
+/* CSS for larger screens (laptop) */
+@media only screen and (min-width: 1367px) {
+    .container {
+        width: 70%;
     }
-  } 
-  @media screen and (max-width: 1024px) {
-    .contact-form {
-      width: auto;
+
+    .container h1 {
+        font-size: 50px;
     }
-  }
-  @media screen and (max-width: 992px) {
-    .main-box{
-      height: 60vh;
-      display: flex;
-      padding: 28px 20px;
-      align-items: start;
+
+    .container p {
+        font-size: 25px;
     }
-    .container{
-      max-width:780px;
+
+    .container-left,
+    .container-right {
+        padding: 40px;
     }
-    .contact-form{
-      display:block!important;  }
-    .contact-form .contact-info{
-      position: unset;
-      width: 100%;  
+
+    .input-row .input-group {
+        flex-basis: 48%;
     }
-    .contact-form .info-form{
-      width: 100%;
-      padding-left: 20px;
-      margin-left: 0px;
-      margin-top: 0px;
+
+    button {
+        width: 30%;
     }
-    .info-form .inner-form .content-width{
-      width: 100%;
+}
+
+/* CSS for medium-sized screens (laptop) */
+@media only screen and (max-width: 1366px) {
+    .container {
+        width: 70%;
     }
-  }
-  @media screen and (max-width: 768px){
-    .main-box{
-      height: 110vh;
-      display: flex;
-      padding: 28px 20px;
-      align-items: start;
+
+    .container h1 {
+        font-size: 45px;
     }
-    .container{
-      max-width:580px;
+
+    .container p {
+        font-size: 22px;
     }
-    .contact-form{
-      display:block!important;
+
+    .container-left,
+    .container-right {
+        padding: 40px;
     }
-    .contact-form .contact-info{
-      position: unset;
-      width: 100%; 
+
+    input {
+        width: 90%;
     }
-    .contact-form .info-form{
-      width: 100%;
-      padding-left: 20px;
-      margin-left: 0px;
-      margin-top: 0px;
+
+    .input-row .input-group {
+        flex-basis: 48%;
     }
-    .info-form .inner-form .content-width{
-      width: 100%;
+
+    button {
+        width: 60%;
     }
-  }
-  @media screen and (max-width: 767px){
-    .main-box{
-      height: 150vh;
-      display: flex;
-      padding: 25px 20px;
-      align-items: start;
+}
+
+/* CSS for medium-sized screens (tablet) */
+@media only screen and (max-width: 1024px) {
+    .contact-box {
+        flex-direction: column;
     }
-  }
+
+    .container {
+        width: 80%;
+    }
+
+    .container h1 {
+        font-size: 40px;
+    }
+
+    .container p {
+        font-size: 22px;
+    }
+
+    .container-left,
+    .container-right {
+        padding: 30px;
+    }
+
+    .input-row {
+        flex-wrap: wrap;
+    }
+
+    .input-row .input-group {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 25%;
+    }
+}
+
+/* CSS for smaller screens (mobile) */
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+
+    .container h1 {
+        font-size: 40px;
+    }
+
+    .container p {
+        font-size: 18px;
+    }
+
+    .container-left,
+    .container-right {
+        padding: 20px;
+    }
+
+    .input-row {
+        flex-direction: column; /* Stack input rows vertically */
+    }
+
+    .input-row .input-group {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+
+    input,
+    textarea {
+        padding: 8px;
+    }
+
+    button {
+        width: 60%;
+    }
+
+    tr td:first-child {
+        font-size: 15px;
+        font-weight: 600;
+        padding-right: 10px;
+    }
+}

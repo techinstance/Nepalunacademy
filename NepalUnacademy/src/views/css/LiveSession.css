@@ -1,56 +1,131 @@
-.LivMatRow{
+/* Simple Attractive Background */
+/* .LivMaterial {
+    background: linear-gradient(135deg, #f3f4f6, #e0e0e0); 
+    padding: 5% 10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+/* Educational Themed Background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #fad0c4,);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+
+
+
+.LivMaterial > h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin: 24px;
-    height: max-content;
-    justify-content: center;
-    width: 240px;
-    box-shadow: 8px 8px 16px rgb(186, 186, 186) ;
-    border-radius: 8px;
-}
-.LivMatRow > p {
-  font-size: larger;
-  padding: 12px 0;
-
-
-}
-.LivBtn {
-    margin: 4px 0;
-    padding: 12px 8px;
-    font-size: large;
-    color: white;
-    background-color: rgb(46, 175, 255);
-    border: none;
-    border-radius: 8px;
+    gap: 10px;
 }
 
-.LivBtn:hover{
-    opacity: 0.9;
-    cursor: pointer;
-}
-
-.LivMatRow > img {
-    height: 160px;
-    width: 240px;
-    border-radius: 8px 8px 0 0;
-
-}
-
-.LivMaterial{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 12vh;
-    margin: 10%;
-    font-family: MainFont;
-
-}
-
-.LivMatrColumn{
+.LivMatrColumn {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    text-align: justify;
     justify-content: center;
+    gap: 20px;
+}
+
+.LivMatRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.LivMatRow:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+}
+
+.content-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #1a73e8;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subject {
+    font-size: 1rem;
+    color: #ff7043;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.course {
+    font-size: 1rem;
+    color: #43a047;
+    margin-bottom: 0.5rem;
+}
+
+.desc {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.LivBtn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    background-color: #2eafff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.LivBtn:hover {
+    background-color: #1a90e4;
+    cursor: pointer;
+    transform: translateY(-2px);
 }
