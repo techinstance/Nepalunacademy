@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css'; // Make sure to create and import the CSS file
 import { useStateContext } from '../Context/ContextProvider';
 import { Link } from 'react-router-dom';
@@ -11,19 +11,32 @@ const Header = () => {
 
   const { user, token, setuser, setToken, notification } = useStateContext();
 
+  const [open,setOpen] = useState();
+
   const sideMenu = (action) => {
-    console.log("it hit a function ")
     const sideMenu = document.getElementById('side-menu');
-    console.log(sideMenu)
     if (action === 0) {
       sideMenu.style.display = 'block';
       sideMenu.style.transform = "translateX(0%)";
-      console.log("block was Hit");
     } else {
       sideMenu.style.display = 'none';
-      console.log("block was Hitted ")
     }
   };
+
+  const Logout = ()=>{
+    axiosClient.post('/logout')
+    .then(({ data }) => {
+      setuser(data.user);
+     
+    })
+    .catch((error) => {
+      const response = error.response;
+      if (response && response.status === 422) {
+        setMessage(response.data.message);
+      }
+      console.log(error);
+    });
+  }
 
   return (
     <>
@@ -53,13 +66,16 @@ const Header = () => {
             <img src="assets/images/icon/search.png" alt="search" onClick={slide} />
           </div>
           {token ? (
-            <span>
-              <Link to="mylearning" style={{ padding: "0px 8px" }}>mylearning</Link> @{user.name}
+            <span className='profile'>
+              <Link to="mylearning" style={{ padding: "0px 8px" }}>mylearning</Link> @{user.name} 
+              <img src="assets/images/icon/chevron-down.svg" alt='Logout' onClick={()=>{setOpen(1)}}/>
+                {open==1 ? <span id='logout' onClick={()=>{setOpen(0)}} >Logout</span> :<></>}
             </span>
+            
           ) : (
             <Link className="get-started" to="/login">Get Started</Link>
           )}
-          <img src="assets/images/icon/menu.png" className="menu" onClick={() => {sideMenu(0); console.log("This was Hit") }} alt="menu" />
+          <img src="assets/images/icon/menu.png" className="menu" onClick={() => {setOpen(0)}} alt="menu" />
         </nav>
 
         <div className="side-menu" id="side-menu">
@@ -67,12 +83,11 @@ const Header = () => {
             <img src="assets/images/icon/close.png" alt="close" />
           </div>
           <ul>
-            <li><Link to="#about_section">About</Link></li>
-            <li><Link to="#study_materials">Study Materials</Link></li>
-            <li><Link to="#online_section">Online Sessions</Link></li>
-            <li><Link to="#courses_section">Our Courses</Link></li>
-            <li><Link to="#contactus_section">Contact Us</Link></li>
-            <li><Link to="#feedBACK">Feedback</Link></li>
+            <li><Link to="/studyMaterial"  onClick={() => sideMenu(1)}>Study Materials</Link></li>
+            <li><Link to="/liveSessions"  onClick={() => sideMenu(1)}>Online Sessions</Link></li>
+            <li><Link to="/courses"  onClick={() => sideMenu(1)}>Our Courses</Link></li>
+            <li><Link to="/contact"  onClick={() => sideMenu(1)}>Contact Us</Link></li>
+            <li><Link to="/Vacancies"  onClick={() => sideMenu(1)}>Exams</Link></li>
           </ul>
         </div>
       </header>
