@@ -104,7 +104,20 @@ nav ul li a:hover {
 	cursor: pointer;
 	transition: all 1s;
 }
+.profile{
+	display: flex;
+	flex-direction:row ;
+	justify-content: center;
+	align-items: center;
 
+
+}
+#logout{
+  position:fixed;
+  top: 0;
+  right: 5;
+
+}
 a, button {
 	float: left;
 	font-family: "Montserrat", sans-serif;
