@@ -21,7 +21,7 @@ function Vacancies() {
 
     return (
         <div className="VacMaterial">
-            <h1>📅 Vacancies and Exam Dates</h1>
+            <h1 className="headin">📅 Vacancies and Exam Dates</h1>
             <div className="VacContent">
                 <div className="VacImage">
                     <img src="/assets/study.jpg" alt="Keyboard" />
