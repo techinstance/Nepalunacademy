@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css'; // Make sure to create and import the CSS file
 import { useStateContext } from '../Context/ContextProvider';
+import axiosClient from '../axios-client';
 import { Link } from 'react-router-dom';
 import Notice from '../views/Notice';
 
@@ -25,9 +26,9 @@ const Header = () => {
 
   const Logout = ()=>{
     axiosClient.post('/logout')
-    .then(({ data }) => {
-      setuser(data.user);
-     
+    .then(({ response }) => {
+       console.log(response);
+       setToken();
     })
     .catch((error) => {
       const response = error.response;
@@ -68,7 +69,7 @@ const Header = () => {
           {token ? (
             <span className='profile'>
               <Link to="mylearning" style={{ padding: "0px 8px" }}>mylearning</Link> @{user.name} 
-              <img src="assets/images/icon/chevron-down.svg" alt='Logout' onClick={()=>{setOpen(1)}}/>
+              <img src="assets/images/icon/chevron-down.svg" alt='Logout' onClick={()=>{setOpen(1); Logout(); }}/>
                 {open==1 ? <span id='logout' onClick={()=>{setOpen(0)}} >Logout</span> :<></>}
             </span>
             
