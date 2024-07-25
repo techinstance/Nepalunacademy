@@ -8,6 +8,7 @@ import Community from './Community';
 import ScrollableSection from './AdvantagesSection';
 import FreeSessionSection from './FreeSessionSection';
 import Exploring from './Exploring';
+import Buttonizer from '../components/Buttonizer';
 
 
 
@@ -91,7 +92,7 @@ const Home = () => {
     
       <Teachers></Teachers>
       <Community></Community>
-      
+     <Buttonizer></Buttonizer> 
 {/* Contacts  */}
 
 

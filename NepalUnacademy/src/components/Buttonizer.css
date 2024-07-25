@@ -1,0 +1,113 @@
+.buttonizer-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .buttonizer-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .buttonizer-toggle.open {
+    background-color: #ffffff;
+  }
+  
+  .buttonizer-toggle img {
+    width: 40px; /* Adjust size if needed */
+    height: 40px; /* Adjust size if needed */
+  }
+  
+  .buttonizer-toggle:hover {
+    transform: scale(1.1);
+  }
+  
+  .buttonizer-group {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    transition: width 0.5s ease, height 0.5s ease;
+    visibility: hidden;
+  }
+  
+  .buttonizer-group.open {
+    width: 200px;
+    height: 200px;
+    visibility: visible;
+  }
+  
+  .buttonizer {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .buttonizer-group.open .buttonizer {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .buttonizer img {
+    width: 70%;
+    height: 70%;
+  }
+  
+  .buttonizer:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Position each button in a circle */
+  .buttonizer-group.open .buttonizer:nth-child(1) {
+    top: -80px;
+    left: 80px;
+  }
+  
+  .buttonizer-group.open .buttonizer:nth-child(2) {
+    top: 0px;
+    left: 115px;
+  }
+  
+  .buttonizer-group.open .buttonizer:nth-child(3) {
+    top: 80px;
+    left: 80px;
+  }
+  
+  .buttonizer-group.open .buttonizer:nth-child(4) {
+    top: 90px;
+    left: 5px;
+  }
+  
+  .buttonizer-group.open .buttonizer:nth-child(5) {
+    top: 0px;
+    left: 40px;
+  }
+  
+  .buttonizer-group.open .buttonizer:nth-child(6) {
+    top: -70px;
+    left: -10px;
+  }
+  
+  

@@ -55,14 +55,13 @@ const LoginPage = () => {
       <div className="login-container">
         <div className="logo">
  
-      <img src="/assets/images/icon/Logo.png" alt="logo" />
+      <img src="/assets/images/icon/logo4.jpg" alt="logo" />
       <img src="/assets/Category/nepalflag.gif" style={{ height: '62px', width: '54px', verticalAlign: 'normal' }} alt="Nepal Flag" />
       <div className="image-container">
             <video src="./assets/elearning-banner.mp4" controls autoPlay loop muted className="video"></video>
           </div>
         </div>
         <div className="login-content">
-        
           <div className="form-container">
             <h1>Welcome Back!</h1>
             <p>Login to continue</p>

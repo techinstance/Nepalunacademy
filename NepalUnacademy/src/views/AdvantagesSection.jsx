@@ -8,12 +8,12 @@ const advantages = [
     description: "Conceptual clarity through visualisation",
   },
   {
-    imgSrc: "./assets/AboutCard/NepalUnAcademy2.jpeg",
+    imgSrc: "./assets/AboutCard/NepalUnacademy2.jpeg",
     altText: "Personalized Learning",
     description: "Personalised learning programs",
   },
   {
-    imgSrc: "./assets/AboutCard/NepalUnAcademy1.jpeg",
+    imgSrc: "./assets/AboutCard/NepalUnacademy1.jpeg",
     altText: "Individual Attention",
     description: "Unmatched individual attention",
   },

@@ -53,7 +53,7 @@ const RegisterPag = () => {
     <div className="register-page">
       <div className="register-container">
         <div className="logo">
-          <img src="/assets/images/icon/Logo.png" alt="logo" />
+          <img src="/assets/images/icon/logo4.jpg" alt="logo" />
           <img src="/assets/Category/nepalflag.gif" style={{ height: '62px', width: '54px', verticalAlign: 'normal' }} alt="Nepal Flag" />
         </div>
         <div className="register-content">

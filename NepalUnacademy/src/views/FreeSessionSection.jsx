@@ -3,6 +3,7 @@ import './FreeSessionSection.css';
 import Modal from 'react-modal';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import Notice from './Notice';
 
 Modal.setAppElement('#root');
 
@@ -75,8 +76,7 @@ const FreeSessionSection = () => {
 
 />
 
-
-    
+        
         </div>
         <div className="form-container">
           <h2>Book your Free Session <span role="img" aria-label="boy">👦<img src="/assets/Category/nepalflag.gif" style={{ height: '24px', width: '24px', verticalAlign: 'middle' }} alt="Nepal Flag" /></span></h2>

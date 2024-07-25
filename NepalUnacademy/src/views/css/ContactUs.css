@@ -1,0 +1,186 @@
+/* Importing fonts from Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for body */
+.contact-body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Container for the main content */
+.contact-container {
+    width: 90%;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for main heading */
+.contact-container h1 {
+    color: #0366fa;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+/* Styling for paragraph text */
+.contact-container p {
+    color: #000000;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+/* Styling for contact box container */
+.contact-box {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Styling for left container inside the contact box */
+.contact-left {
+    flex: 2;
+    padding: 40px;
+    background: #ffffff;
+}
+
+/* Styling for right container inside the contact box */
+.contact-right {
+    flex: 1;
+    padding: 40px;
+    background: #0366fa;
+    color: #ffffff;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* Styling for heading inside left container */
+.contact-left h3 {
+    font-size: 25px;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+/* Styling for heading inside right container */
+.contact-right h3 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Styling for input rows */
+.contact-input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Styling for input groups inside input rows */
+.contact-input-group {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Styling for input fields */
+.contact-input, .contact-textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Styling for textareas */
+.contact-textarea {
+    font-size: 15px;
+    height: 100px;
+    resize: vertical;
+}
+
+/* Styling for labels */
+.contact-label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color: #353535;
+}
+
+/* Styling for buttons */
+.contact-button {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    background: #000000;
+    border: none;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover styling for buttons */
+.contact-button:hover {
+    color: #fff;
+    background: #0366fa;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for table cells */
+.contact-table td:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+.contact-table td {
+    padding-top: 20px;
+}
+
+/* Styling for iframes */
+.contact-iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-left, .contact-right {
+        padding: 20px;
+    }
+
+    .contact-input-row {
+        flex-direction: column;
+    }
+
+    .contact-input-group {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-iframe {
+        height: 250px;
+    }
+}

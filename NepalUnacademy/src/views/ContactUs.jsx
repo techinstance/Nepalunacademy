@@ -2,10 +2,10 @@ import React from 'react';
 import './css/ContactUs.css';
 
 function validateForm() {
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+    const name = document.getElementById('contact-name').value;
+    const phone = document.getElementById('contact-phone').value;
+    const email = document.getElementById('contact-email').value;
+    const message = document.getElementById('contact-message').value;
 
     if (name.trim() === '') {
         alert('Please enter your name');
@@ -29,58 +29,65 @@ function validateForm() {
 
 const ContactUs = () => {
     return (
-        <div className="contact-container">
-            <h1>Get in Touch</h1>
-            <p>Fill up the form to get in touch with us.</p>
-            <div className="contact-box">
-                <div className="contact-left">
-                    <h3>Fill the Form*</h3>
-                    <form id="contactForm" onSubmit={(e) => { if (!validateForm()) e.preventDefault(); }}>
-                        <div className="input-row">
-                            <div className="input-group">
-                                <label>Name*</label>
-                                <input type="text" id="name" placeholder="Enter your Name" required />
+        <div className="contact-body">
+            <div className="contact-container">
+                <h1>📞 Get in Touch</h1>
+                <p>Fill up the form to get in touch with us.</p>
+                <div className="contact-box">
+                    <div className="contact-left">
+                        <h3>✏️ Fill the Form*</h3>
+                        <form id="contactForm" onSubmit={(e) => { if (!validateForm()) e.preventDefault(); }}>
+                            <div className="contact-input-row">
+                                <div className="contact-input-group">
+                                    <label className="contact-label">Name*</label>
+                                    <input type="text" id="contact-name" className="contact-input" placeholder="Enter your Name" required />
+                                </div>
+                                <div className="contact-input-group">
+                                    <label className="contact-label">Phone*</label>
+                                    <input type="text" id="contact-phone" className="contact-input" placeholder="+977 98 000 000 00" required />
+                                </div>
                             </div>
-                            <div className="input-group">
-                                <label>Phone*</label>
-                                <input type="text" id="phone" placeholder="+91 1234567890" required />
+                            <div className="contact-input-row">
+                                <div className="contact-input-group">
+                                    <label className="contact-label">Email*</label>
+                                    <input type="email" id="contact-email" className="contact-input" placeholder="Enter your Email" required />
+                                </div>
                             </div>
-                        </div>
-                        <div className="input-row">
-                            <div className="input-group">
-                                <label>Email*</label>
-                                <input type="email" id="email" placeholder="youremail@gmail.com" required />
+                            <div className="contact-input-row">
+                                <div className="contact-input-group">
+                                    <label className="contact-label">Message*</label>
+                                    <textarea id="contact-message" className="contact-textarea" placeholder="Type your Message here" rows="4" required></textarea>
+                                </div>
                             </div>
-                            <div className="input-group">
-                                <label>Subject</label>
-                                <input type="text" id="subject" placeholder="Inquiry" />
-                            </div>
-                        </div>
-                        <label>Message*</label>
-                        <textarea rows="10" id="message" placeholder="Enter your Message" required></textarea>
-                        <button type="submit">SEND MESSAGE</button>
-                    </form>
-                </div>
-                <div className="contact-right">
-                    <h3>Reach Us</h3>
-                    <table>
-                        <tr>
-                            <td>Email: </td>
-                            <td>contact@msijanakpuri.com</td>
-                        </tr>
-                        <tr>
-                            <td>Phone: </td>
-                            <td>+91 011-45656183</td>
-                        </tr>
-                        <tr>
-                            <td>Address: </td>
-                            <td>Maharaja Surajmail Institute <br />
-                                C-4, Janakpuri, <br />
-                                Delhi - 110058, India</td>
-                        </tr>
-                    </table>
-                    <div className="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2888210618585!2d77.09131724016883!3d28.621104670527558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04afb8dbcfe1%3A0xaff19e718be2136b!2sMaharaja%20Surajmal%20Institute%20Of%20Technology!5e0!3m2!1sen!2sin!4v1711214006526!5m2!1sen!2sin" width="800" height="275" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                            <button type="submit" className="contact-button">Submit</button>
+                        </form>
+                    </div>
+                    <div className="contact-right">
+                        <h3><img src="assets/Category/nepalflag.gif" style={{ height: '62px', width: '54px', verticalAlign: 'normal' }} alt="Nepal Flag" /> Contact Us</h3>
+                        <table className="contact-table">
+                            <tbody>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>example@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone:</td>
+                                    <td>+977 98 000 000 00</td>
+                                </tr>
+                                <tr>
+                                    <td>Address:</td>
+                                    <td>Janakpurdham, Nepal</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <iframe
+                            className="contact-iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d527202.7774037998!2d84.82586835793073!3d28.13268206584593!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1721904335590!5m2!1sen!2sin" 
+                            allowFullScreen=""
+                            aria-hidden="true"
+                            tabIndex="0"
+                            title="Google Maps Location"
+                        ></iframe>
                     </div>
                 </div>
             </div>
