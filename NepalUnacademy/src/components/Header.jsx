@@ -47,7 +47,7 @@ const Header = () => {
         <nav>
           <div className="logo">
             <Link to="/">
-              <img src="assets/images/icon/Logo.png" alt="logo" /><img src="assets/Category/nepalflag.gif" style={{ height: '62px', width: '54px', verticalAlign: 'normal' }} alt="Nepal Flag" />
+              <img src="assets/images/icon/logo2.jpg" alt="logo" /><img src="assets/Category/nepalflag.gif" style={{ height: '62px', width: '54px', verticalAlign: 'normal' }} alt="Nepal Flag" />
             </Link>
           </div>
           <div className='space'>

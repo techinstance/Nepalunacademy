@@ -29,11 +29,11 @@ function validateForm() {
 
 const ContactUs = () => {
     return (
-        <div className="container">
+        <div className="contact-container">
             <h1>Get in Touch</h1>
             <p>Fill up the form to get in touch with us.</p>
             <div className="contact-box">
-                <div className="container-left">
+                <div className="contact-left">
                     <h3>Fill the Form*</h3>
                     <form id="contactForm" onSubmit={(e) => { if (!validateForm()) e.preventDefault(); }}>
                         <div className="input-row">
@@ -61,7 +61,7 @@ const ContactUs = () => {
                         <button type="submit">SEND MESSAGE</button>
                     </form>
                 </div>
-                <div className="container-right">
+                <div className="contact-right">
                     <h3>Reach Us</h3>
                     <table>
                         <tr>
