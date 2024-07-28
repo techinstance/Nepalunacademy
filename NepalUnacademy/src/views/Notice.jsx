@@ -54,15 +54,15 @@ const Notice = () => {
   };
 
   return (
-    <div>
+    <div style={{display:'flex',flexDirection:'row',alignItems:'center'}}>
       <marquee
-        style={{ background: 'linear-gradient(to right, #FA4B37, #DF2771)', marginTop: '100px' }}
+        style={{ background: 'linear-gradient(to right, #FA4B37, #DF2771)', height:'max-content' }}
         direction="left"
-     
+             
         scrollAmount="18"
       >
         <div className="marqu">
-          “Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”
+         🔓 Unlock the doors to knowledge with NepalUnAcademy — your gateway to a world of education tailored to Nepal's diverse academic landscape. 📚 From comprehensive courses to expert guidance, we offer unparalleled learning experiences for every student. 🌟 Please note, NepalUnAcademy operates independently and is not associated with Unacademy India. 🚫
         </div>
       </marquee>
 

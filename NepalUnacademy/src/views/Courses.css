@@ -1,107 +1,53 @@
-.section {
-  padding: 100px 0;
+/* src/components/Courses.css */
+
+.courses-container {
+  margin-top: 10%;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
 }
 
-.section-subtitle {
-  font-size: 16px;
-  color: #555;
-  text-transform: uppercase;
+.courses-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.section-title {
-  font-size: 36px;
-  margin-bottom: 40px;
-  position: relative;
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
 
-.section-title .span.has-after {
-  position: relative;
-}
-
-.section-title .span.has-after::after {
-  content: '';
-  width: 100%;
-  height: 3px;
-  background-color: #FF6F61;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-}
-
-.grid-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.card-container {
-  flex: 1 1 calc(33.333% - 30px);
-}
-
-.card {
-  background: #fff;
+.course-card {
+  background-color: #fff;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  text-align: left;
 }
 
-.card-banner img {
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-image {
   width: 100%;
   height: auto;
 }
 
-.card-content {
-  padding: 20px;
+.course-title {
+  font-size: 1.5em;
+  margin: 15px;
+  color: #333;
 }
 
-.card-price {
-  color: #FF6F61;
-  font-size: 24px;
-}
-
-.rating-wrapper {
-  display: flex;
-  gap: 5px;
-}
-
-.card-title {
-  font-size: 20px;
-  margin: 15px 0;
-}
-
-.card-meta {
-  display: flex;
-  gap: 20px;
-}
-
-.card-meta p {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.btn-primary {
-  background-color: #FF6F61;
-  color: #fff;
-  padding: 10px 20px;
-  text-align: center;
-  display: block;
-  width: 200px;
-  margin: 40px auto 0;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.layer-link {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  text-indent: -9999px;
-  overflow: hidden;
+.course-description {
+  font-size: 1em;
+  margin: 15px;
+  color: #666;
 }

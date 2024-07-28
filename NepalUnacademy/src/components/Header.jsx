@@ -41,16 +41,30 @@ const Header = () => {
 
   return (
     <>
-      <main>
-      <Notice />
-      </main>
+      
       <header id="header">
+       
         <nav>
+          <div className='navb'>
           <div className="logo">
-            <Link to="/">
-              <img src="assets/images/icon/logo4.jpg" alt="logo" /><img src="assets/Category/nepalflag.gif" style={{ height: '62px', width: '54px', verticalAlign: 'normal' }} alt="Nepal Flag" />
-            </Link>
-          </div>
+  <Link to="/">
+    <div className="logo-container">
+     
+      <img 
+        src="assets/images/icon/logo (2).png" 
+        alt="logo" 
+        className="main-logo" 
+      />
+       <img 
+        src="assets/Category/nepalflag.gif" 
+        style={{ height: '62px', width: '54px', verticalAlign: 'middle' }} 
+        alt="Nepal Flag" 
+        className="nepal-flag" 
+      />
+    </div>
+  </Link>
+</div>
+
           <div className='space'>
 
           </div>
@@ -77,6 +91,9 @@ const Header = () => {
             <Link className="get-started" to="/login">Get Started</Link>
           )}
           <img src="assets/images/icon/menu.png" className="menu" onClick={() => {setOpen(0)}} alt="menu" />
+          </div>
+          <Notice/>
+
         </nav>
 
         <div className="side-menu" id="side-menu">
@@ -91,6 +108,9 @@ const Header = () => {
             <li><Link to="/Vacancies"  onClick={() => sideMenu(1)}>Exams</Link></li>
           </ul>
         </div>
+     
+        
+       
       </header>
     </>
   );

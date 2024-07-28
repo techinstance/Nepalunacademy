@@ -1,28 +1,15 @@
 /* src/components/SlidingInformation.css */
 
 .marqu {
-    text-align: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 20px;
-    padding: 10px;
-  }
-  
-  .side-text {
-    /* Add your styles here */
-  }
-  
-  .side-text-appear {
-    /* Add your animation or appear styles here */
-  }
-  
-  .sideImage {
-    /* Add your styles here */
-  }
-  
-  .sideImage-appear {
-    /* Add your animation or appear styles here */
-  }
-  
-  /* Add any other styles you need for your component */
-  
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.marquee-container:hover .marquee {
+  animation-play-state: paused;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Buttonizer.css';
 import plusIcon from '/assets/social png/phone-call.png'; // Replace with the path to your '+' image
 import closeIcon from '/assets/social png/phone-call.png'; // Replace with the path to your '✕' image
@@ -9,6 +9,16 @@ const Buttonizer = () => {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    let timer;
+    if (isOpen) {
+      timer = setTimeout(() => {
+        setIsOpen(false);
+      }, 3000); // Auto-close after 5 seconds
+    }
+    return () => clearTimeout(timer); // Cleanup the timer if the component unmounts or `isOpen` changes
+  }, [isOpen]);
 
   return (
     <div className="buttonizer-container">
@@ -35,7 +45,6 @@ const Buttonizer = () => {
           <a href="https://www.instagram.com/nepal_unacademy/">
             <img src="./assets/social png/insta.jpg" alt="Instagram" />
           </a>
-          
         </div>
         <div className="buttonizer">
           <a href="tel:+9195461289425">

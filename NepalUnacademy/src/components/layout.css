@@ -6,4 +6,24 @@
 }
 
 
+
+
+
+/* Container to align logo and Nepal flag */
+.logo-container {
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+  }
+  
+  /* Nepal flag image styles */
+  .nepal-flag {
+    margin-right: 8px; /* Adjust spacing between the flag and logo */
+  }
+  
+  /* Main logo styles */
+  .main-logo {
+    height: 62px; /* Adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+  }
+
   

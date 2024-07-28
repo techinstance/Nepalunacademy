@@ -4,6 +4,7 @@ body {
   }
   
   .register-page {
+    margin-top: 9%;
     display: flex;
     justify-content: center;
     align-items: center;

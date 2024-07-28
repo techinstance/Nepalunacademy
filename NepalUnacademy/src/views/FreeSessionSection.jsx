@@ -3,7 +3,6 @@ import './FreeSessionSection.css';
 import Modal from 'react-modal';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import Notice from './Notice';
 
 Modal.setAppElement('#root');
 
@@ -21,7 +20,7 @@ const FreeSessionSection = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
   const sendOtp = () => {
-    const generatedOtp = '123456';
+    const generatedOtp = '14515117';
     setOtp(generatedOtp);
     setOtpSent(true);
     setTimeout(() => {
@@ -96,7 +95,7 @@ const FreeSessionSection = () => {
             </button>
           </div>
           <form onSubmit={handleSubmit}>
-            <input type="text" name="childName" placeholder="Enter Name of your Child" required />
+            <input type="text" name="childName" placeholder="Enter your Name Here " required />
             <div className="mobile-input">
               <input type="text" name="mobileNumber" placeholder="Enter your Mobile Number" required />
               <button type="button" onClick={sendOtp}>Send OTP</button>
@@ -116,6 +115,12 @@ const FreeSessionSection = () => {
               <option value="">State</option>
               <option value="state1">State 1</option>
               <option value="state2">State 2</option>
+              <option value="state2">State 3</option>
+              <option value="state2">State 4</option>
+              <option value="state2">State 5</option>
+              <option value="state2">State 6</option>
+              <option value="state2">State 7</option>
+
               {/* Add more states as needed */}
             </select>
             <textarea

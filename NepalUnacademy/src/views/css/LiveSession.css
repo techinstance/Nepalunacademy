@@ -17,19 +17,14 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
 }
-
-
-
-
-
-.LivMaterial > h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.LivMaterial {
+    margin-top: 11%;
 }
+
+
+
+
+
 
 .LivMatrColumn {
     display: flex;

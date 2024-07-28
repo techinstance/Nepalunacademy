@@ -6,6 +6,7 @@ body {
 }
 
 .free-session-section {
+  margin-top: 145px;
   display: flex;
   align-items: center;
   justify-content: center;

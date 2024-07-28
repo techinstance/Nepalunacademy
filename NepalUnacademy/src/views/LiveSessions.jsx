@@ -43,7 +43,12 @@ function LiveSessions() {
 
     return (
         <div className="LivMaterial">
-           <h1 className="header-title">Live Sessions <FaRegSmile className="gradient-icon" /></h1>
+          <h1 style={{ textAlign: 'center', fontSize: '3.5rem', color: '#333', margin: '2rem 0', position: 'relative' }}>
+  <span style={{ marginRight: '1rem' }}>
+    <i className="fas fa-video" style={{ fontSize: '2rem', color: '#2e86de' }}></i>
+  </span>
+ Live <span style={{ color: '#e74c3c' }}>Session</span>
+</h1>
             <div className="LivMatrColumn">
                 {data.length > 0 ? (
                     data.map((item) => (

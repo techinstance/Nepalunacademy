@@ -1,8 +1,4 @@
 /* App.css */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
 
 .community-section {
   text-align: center;
@@ -63,18 +59,3 @@ body {
   color: #0088cc;
 }
 
-.register-button {
-  background-color: #ffcc00;
-  color: black;
-  border: none;
-  padding: 15px 30px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 25px;
-  transition: background-color 0.3s;
-  margin-top: 20px;
-}
-
-.register-button:hover {
-  background-color: #e6b800;
-}

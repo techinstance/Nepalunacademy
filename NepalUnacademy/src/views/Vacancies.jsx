@@ -21,10 +21,15 @@ function Vacancies() {
 
     return (
         <div className="VacMaterial">
-            <h1 className="headin">📅 Vacancies and Exam Dates</h1>
+             <h2 style={{ textAlign: 'center', fontSize: '3.5rem', color: '#333', margin: '2rem 0', position: 'relative' }}>
+    <span style={{ marginRight: '1rem' }}>
+      <i className="fas fa-calendar-alt" style={{ fontSize: '2rem', color: '#2e86de' }}></i>
+    </span>
+    VACANCIES AND <span style={{ color: '#e74c3c' }}>EXAM DATES  📅  </span>
+  </h2>
             <div className="VacContent">
                 <div className="VacImage">
-                    <img src="/assets/study.jpg" alt="Keyboard" />
+                    <img src="/assets/job.png" alt="Keyboard" />
                 </div>
                 <p className="description">Explore the latest vacancies and exam dates available for various courses and programs. Click "Apply" to learn more and submit your application.</p>
                 <div className="VacList">
