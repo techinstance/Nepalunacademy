@@ -53,7 +53,7 @@ function StudyMaterial() {
                             <img src={item.img_path} alt="Study Material" />
                             <div className="study-material-content">
                                 <p>{item.Desc}</p>
-                                <button className="subscribe-btn" onClick={() => handleSubscribe(item.id)}>Subscribe</button>
+                                <a href={item.File}><button  className="subscribe-btn" onClick={() => handleSubscribe(item.id)}>Subscribe</button></a>
                             </div>
                         </div>
                     ))
